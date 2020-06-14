@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url('../fonts/Gilroy-Medium.eot');
+  src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Medium.woff') format('woff'),
+  url('../fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+@font-face {
+  font-family: 'Gilroy Bold';
+  src: url('../fonts/Gilroy-Bold.eot');
+  src: url('../fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Gilroy-Bold.woff') format('woff'),
+  url('../fonts/Gilroy-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+@mixin med {
+  font-family: 'Gilroy Medium', sans-serif;
+  font-weight: normal;
+}
+
+@mixin bold {
+  font-family: 'Gilroy Bold', sans-serif;
+  font-weight: normal;
+}
