@@ -1,0 +1,25 @@
+.about
+  background-color: $background-color
+  padding: 110px 0
+  &-block
+    text-align: center
+  &__title
+    margin: 0
+    padding: 0
+    margin-bottom: 35px
+    +bold
+    font-size: 34px
+    color: $text-color
+  &__text
+    margin: auto
+    padding: 0
+    font-size: 18px
+    line-height: 22px
+    max-width: 460px
+    &:not(:last-child)
+      margin-bottom: 50px
+
+@media screen and ( max-width: 480px )
+  .about
+    padding: 80px 0
+  
