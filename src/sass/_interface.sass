@@ -9,9 +9,25 @@ body
   width: 100%
   +med
 
+p
+  margin: 0
+  padding: 0
+
 .container
   max-width: 960px
   margin: auto
+
+.section
+  text-align: center
+  &__title
+    margin: 0
+    padding: 0
+    +bold
+    font-size: 34px
+    color: $text-color
+  &__text
+    font-size: 18px
+    line-height: 22px
 
 @media screen and ( max-width: 1200px )
   .container

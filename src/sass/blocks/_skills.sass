@@ -1,0 +1,31 @@
+.skills
+  padding: 100px 0
+  &__title
+    margin-bottom: 70px
+  &__text
+    margin-bottom: 80px
+  &-programs
+    display: flex
+    justify-content: space-between
+    &__name
+      font-size: 14px
+      line-height: 18px
+      color: $second-text-color
+      max-width: 78px
+      margin: auto
+      margin-top: 25px
+      margin-bottom: 40px
+    &__item:last-child
+      & .skills-programs__name
+        min-height: 36px
+
+@media screen and ( max-width: 1000px )
+  .skills
+    padding: 80px 0 100px
+    &__title
+      margin-bottom: 50px  
+    &-programs
+      flex-direction: column
+      &__item:not(:last-child)
+        margin-bottom: 80px
+        
