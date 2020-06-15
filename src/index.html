@@ -25,14 +25,32 @@
       <div class="container">
         <div class="hero-block">
           <div class="hero-text">
-            <h1 class="hero-text__title">Денис Новик</h1>
+            <div class="hero-text__wrapper">
+              <h1 class="hero-text__title">Денис Новик</h1>
+              <div class="hero-text__menu" id="menu-button"></div>
+            </div>
             <h3 class="hero-text__subtitle">UX | UI дизайнер 24 года, Минск</h3>
             <div class="hero-text__image"><a href="#"><img src="img/hero/behance.svg" alt="behance"></a></div>
           </div>
           <div class="hero__image"><img src="img/hero/hero.jpg" alt="Мое фото"></div>
+          <div class="hero__image__mobile"><img src="img/hero/hero-mobile.jpg" alt="Мое фото"></div>
         </div>
       </div>
     </section>
   </main>
+  <div class="mobile">
+    <div class="mobile-block">
+      <ul class="mobile__menu">
+        <li class="mobile__menu__item"><a href="#">Главная</a></li>
+        <li class="mobile__menu__item"><a href="#">Обо мне</a></li>
+        <li class="mobile__menu__item"><a href="#">Навыки</a></li>
+        <li class="mobile__menu__item"><a href="#">Портфолио</a></li>
+        <li class="mobile__menu__item"><a href="#">Контакты</a></li>
+      </ul>
+      <div class="mobile__cancel" id="menu-cancel"><img src="img/hero/close.svg" alt=""></div>
+    </div>
+  </div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

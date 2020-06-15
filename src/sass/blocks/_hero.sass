@@ -3,6 +3,8 @@
     display: flex
     justify-content: center
     margin-bottom: 105px
+    &__mobile
+      display: none
   &-text
     display: flex
     justify-content: space-between
@@ -25,11 +27,68 @@
       top: 4px
       font-size: 18px
       line-height: 22px
-      max-width: 139px
+      max-width: 142px
       +med
     &__image
-      width: 40px 
-      height: 40px
       transition: 0.2s
+      width: 142px
+      height: 40px
+      text-align: right
+      & img
+        max-width: 40px 
+        max-height: 40px
       &:hover
         opacity: 0.7
+
+@media screen and ( max-width: 768px )
+  .hero
+    &-text
+      flex-direction: column
+      align-items: start
+      &__title
+        margin-bottom: 35px
+        top: 0
+      &__image
+        display: none
+      &__wrapper
+        width: 100%
+        display: flex
+        justify-content: space-between
+      &__menu
+        position: relative
+        top: 14px
+        width: 33px
+        height: 4px
+        background-color: #000000
+        transition: 0.2s
+        &__button
+          position: relative
+          top: 50px
+          height: 25px
+        &:hover
+          opacity: 0.7
+        &::before
+          content: ''
+          position: absolute
+          top: 8px
+          width: 33px
+          height: 4px
+          background-color: #000000
+        &::after
+          content: ''
+          position: absolute
+          top: 16px
+          width: 33px
+          height: 4px
+          background-color: #000000  
+
+@media screen and ( max-width: 480px )
+  .hero
+    &__image
+      display: none
+      &__mobile
+        display: flex
+        justify-content: center
+            
+         
+  
