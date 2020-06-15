@@ -1,0 +1,32 @@
+.footer
+  padding: 120px 0
+  &-socials
+    display: flex
+    justify-content: space-between
+    max-width: 350px
+    margin: auto
+    margin-bottom: 45px
+    &__item
+      width: 40px
+      height: 40px
+      transition: 0.2s
+      &:hover
+        opacity: 0.7
+  &__subtitle
+    margin: 35px 0
+  &__button
+    padding: 13px 30px
+    font-size: 18px
+    color: #ffffff
+    background-color: $text-color
+    border: none
+    border-radius: 50px
+    margin-bottom: 85px
+    transition: 0.2s
+    &:hover
+      background-color: $second-text-color
+
+@media screen and ( max-width: 768px )
+  .footer
+    padding: 80px 0 100px
+  
